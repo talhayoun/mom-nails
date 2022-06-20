@@ -29,6 +29,7 @@ const FloatingImage = (props) => {
         >
             <Carousel
                 sx={{ height: "100%" }}
+                swipe={false}
                 navButtonsAlwaysInvisible={true}
                 indicatorIconButtonProps={{ style: { display: "none" } }}
             >
