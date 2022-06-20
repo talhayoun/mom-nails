@@ -1,0 +1,27 @@
+.NavLinkStyle {
+  /* you can change these variables to control the border */
+  --border-color: #ffd8cb;
+  --border-width: 2px;
+  --bottom-distance: 0px; /* you can increase this */
+
+  color: #666;
+  display: inline-block;
+  background-image: linear-gradient(var(--border-color), var(--border-color));
+  background-size: 0% var(--border-width);
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+  margin: 5px 0;
+  background-position: 0 calc(100% - var(--bottom-distance));
+  text-decoration:none;
+  font-size:25px;
+  color:#151515;
+}
+
+.NavLinkStyle:hover{
+    background-size: 100% var(--border-width);
+
+}
+
+.fromLeft {
+    background-position: 0 calc(100% - var(--bottom-distance))
+  }
