@@ -1,8 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
 import StyledPinkButton from "../Button/StyledPinkButton";
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Slideshow = (props) => {
     const {
@@ -13,14 +13,19 @@ const Slideshow = (props) => {
         imageBackgroundSrc,
     } = props;
     const theme = useTheme();
-    const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
+    const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
 
     const [image, setImage] = useState(images[0]);
     const imageIndex = useRef(0);
 
+    const onClickBook = () => {
+        window.open("https://wa.link/d6quk1");
+    };
+
     useEffect(() => {
         let interval = setInterval(() => {
-            const nextIndex = images.length == imageIndex.current + 1 ? 0 : imageIndex.current + 1;
+            const nextIndex =
+                images.length == imageIndex.current + 1 ? 0 : imageIndex.current + 1;
 
             imageIndex.current = nextIndex;
 
@@ -28,8 +33,8 @@ const Slideshow = (props) => {
         }, 6000);
 
         return () => {
-            clearInterval(interval)
-        }
+            clearInterval(interval);
+        };
     }, []);
     return (
         <Box
@@ -38,9 +43,17 @@ const Slideshow = (props) => {
                 minHeight: "300px",
                 ...containerStyles,
             }}
-            className='slideshow-container'
+            className="slideshow-container"
         >
-            <img className="fadeInUp" src={image} style={{ width: "100%", ...imageStyles, display: isDesktop ? "block" : "none" }} />
+            <img
+                className="fadeInUp"
+                src={image}
+                style={{
+                    width: "100%",
+                    ...imageStyles,
+                    display: isDesktop ? "block" : "none",
+                }}
+            />
             <img
                 className="backgroundImage"
                 src={imageBackgroundSrc}
@@ -50,15 +63,15 @@ const Slideshow = (props) => {
                 style={{
                     zIndex: "999",
                     position: "absolute",
-                    top: isDesktop ? "30%" : '25%',
+                    top: isDesktop ? "30%" : "25%",
                     left: "20%",
                     display: "flex",
                     flexDirection: "column",
                     direction: "rtl",
                     gap: "15px",
-                    paddingRight: isDesktop ? "0px" : '30px',
-                    alignItems: 'center',
-                    justifyContent: 'center'
+                    paddingRight: isDesktop ? "0px" : "30px",
+                    alignItems: "center",
+                    justifyContent: "center",
                 }}
             >
                 <Typography
@@ -89,7 +102,7 @@ const Slideshow = (props) => {
                     אצלנו תמצאי את כל סוגי הלק, איכות ועיצוב וצורות לק ברמה <br />
                     הגבוה ביותר
                 </Typography>
-                <StyledPinkButton text="קביעת תור" />
+                <StyledPinkButton text="קביעת תור" onClick={onClickBook} />
             </Box>
         </Box>
     );

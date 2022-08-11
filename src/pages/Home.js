@@ -31,6 +31,11 @@ const Home = () => {
     const isDesktop = useMediaQuery(theme.breakpoints.up('sm'));
     const [isShowMoreClicked, setIsShowMoreClicked] = useState(false);
 
+    const onClickBook = () => {
+        window.open("https://wa.link/d6quk1");
+        setIsShowMoreClicked(true)
+    }
+
     return (
         <Box>
             <Nav />
@@ -80,7 +85,7 @@ const Home = () => {
                         אצלנו תקבלי את הלק המקצועי ביותר, מבחינת איכות ונראות שמחזיק זמן רב
                     </Typography>
                     <TransparentButton
-                        onClick={() => setIsShowMoreClicked(true)}
+                        onClick={() => onClickBook()}
                         text="קבעי תור"
                     />
                 </Box>

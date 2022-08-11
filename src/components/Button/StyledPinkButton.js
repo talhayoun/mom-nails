@@ -3,6 +3,7 @@ import styles from "./StyledPinkButton.module.css"
 const StyledPinkButton = (props) => {
     return (
         <Button
+            onClick={props.onClick}
             className={styles.pinkButton}
             variant="contained"
             style={{
