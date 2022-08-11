@@ -21,7 +21,7 @@ let slides = [
     <img src={slide2} alt="2" style={{ height: "400px" }} />,
     <img src={slide3} alt="3" style={{ height: "400px" }} />,
     <img src={slide1} alt="4" style={{ height: "400px" }} />,
-    <img src={slide2} alt="5" style={{ height: "400px" }} />,
+    <img src={slide2} alt="5" style={{ height: "400px" }} />
 ];
 
 const slideShowImages = [fingersImage, feetImage];
