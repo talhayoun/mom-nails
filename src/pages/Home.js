@@ -79,10 +79,10 @@ const Home = () => {
                         style={{ fontFamily: "Fredoka, sans- serif" }}
                         variant="h6"
                     >
-                        יש לנו מגוון רב של אופציות, הכל נעשה בצורה מדויקת
+                        יש מגוון רב של אופציות, הכל נעשה בצורה מדויקת
                     </Typography>
                     <Typography variant="subtitle1">
-                        אצלנו תקבלי את הלק המקצועי ביותר, מבחינת איכות ונראות שמחזיק זמן רב
+                        אצלי תמצאי את כל סוגי הלק, איכות ועיצוב ברמה גבוהה
                     </Typography>
                     <TransparentButton
                         onClick={() => onClickBook()}

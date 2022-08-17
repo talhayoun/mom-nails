@@ -25,7 +25,7 @@ const Details = () => {
                 <span style={{ fontWeight: "bold", paddingLeft: "10px" }}>
                     שעות עבודה:
                 </span>
-                א'-ו', 10:00 - 18:00
+                א'-ה', 10:00 - 18:00
             </Typography>
         </Box>
     );

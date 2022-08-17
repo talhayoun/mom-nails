@@ -11,22 +11,22 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 const iconTexts = [
     {
         title: "פדיקור",
-        subtext: "אצלנו תמצאי את הפדיקור הכי מקצועי",
+        subtext: "אצלי תמצאי את הפדיקור הכי מקצועי",
         Icon: PedicureSvg,
     },
     {
         title: "מניקור",
-        subtext: "אצלנו תמצאי את המניקור הכי מקצועי",
+        subtext: "אצלי תמצאי את המניקור הכי מקצועי",
         Icon: FingerManicureSvg,
     },
     {
-        title: "קישוטים",
-        subtext: "אצלנו תמצאי את הקישוטים הכי יפים",
+        title: "גבות",
+        subtext: "אצלי תצאי עם הגבות הכי יפות",
         Icon: NailArtSvg,
     },
     {
         title: "פראנץ",
-        subtext: "אצלנו תמצאי את פראנץ הכי מקצועי",
+        subtext: "אצלי תמצאי את פראנץ הכי מקצועי",
         Icon: WaxSvg,
     },
 ];

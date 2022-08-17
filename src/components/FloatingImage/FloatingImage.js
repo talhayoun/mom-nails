@@ -41,7 +41,7 @@ const FloatingImage = (props) => {
                                 style={{
                                     position: "absolute",
                                     left: isDesktop ? "45%" : "5%",
-                                    top: isDesktop ? "20%" : '30%',
+                                    top: isDesktop ? "20%" : "30%",
                                 }}
                             />
                             <img
@@ -76,8 +76,8 @@ const FloatingImage = (props) => {
                                 style={{ fontFamily: "Fredoka, sans- serif" }}
                                 variant={"subtitle1"}
                             >
-                                אצלנו קיים מגוון אופציות כגון טיפולי פדיקור ייחודים ורפואיים,
-                                טיפוח ציפורניים ועיצובים מרהיבים.
+                                אצלי קיים מגוון אופציות כגון טיפולי פדיקור ייחודים ורפואיים,
+                                טיפוח ציפורניים.
                             </Typography>
                             <Typography
                                 style={{
@@ -86,24 +86,9 @@ const FloatingImage = (props) => {
                                 }}
                                 variant={"subtitle1"}
                             >
-                                אצלנו את תצאי מרוצה והלק יחזיק לאורך זמן רב
+                                אצלי את תצאי מרוצה והלק יחזיק לאורך זמן רב
                             </Typography>
-                            <Typography
-                                style={{ fontFamily: "Fredoka, sans- serif" }}
-                                variant={"subtitle1"}
-                            >
-                                אצלנו קיים מגוון אופציות כגון טיפולי פדיקור ייחודים ורפואיים,
-                                טיפוח ציפורניים ועיצובים מרהיבים.
-                            </Typography>
-                            <Typography
-                                style={{
-                                    fontFamily: "Fredoka, sans- serif",
-                                    marginBottom: "20px",
-                                }}
-                                variant={"subtitle1"}
-                            >
-                                אצלנו את תצאי מרוצה והלק יחזיק לאורך זמן רב
-                            </Typography>
+
                             <img src={lakImage} style={{ height: "350px" }} />
                         </div>
                     );
