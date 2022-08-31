@@ -12,16 +12,20 @@ import { Carousel } from "3d-react-carousal";
 import slide1 from "../images/slide1.jpeg";
 import slide2 from "../images/slide2.jpg";
 import slide3 from "../images/slide3.jpg";
+import slide4 from "../images/slide4.jpg";
+import slide5 from "../images/slide5.jpg";
+import slide6 from "../images/slide6.jpg";
 import { useState } from "react";
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 let slides = [
-    <img src={slide1} alt="1" style={{ height: "400px" }} />,
-    <img src={slide2} alt="2" style={{ height: "400px" }} />,
+    <img src={slide6} alt="5" style={{ height: "400px" }} />,
+    <img src={slide5} alt="5" style={{ height: "400px" }} />,
+    <img src={slide4} alt="4" style={{ height: "400px" }} />,
     <img src={slide3} alt="3" style={{ height: "400px" }} />,
-    <img src={slide1} alt="4" style={{ height: "400px" }} />,
-    <img src={slide2} alt="5" style={{ height: "400px" }} />
+    <img src={slide2} alt="2" style={{ height: "400px" }} />,
+    <img src={slide1} alt="1" style={{ height: "400px" }} />,
 ];
 
 const slideShowImages = [fingersImage, feetImage];
