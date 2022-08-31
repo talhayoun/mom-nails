@@ -3,24 +3,24 @@ import { Box } from "@mui/material";
 import NavLinkStyle from "./NavLinkStyle";
 import logo from "../../images/logo.png";
 import Details from "./Details";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
 
 const Nav = () => {
+    const theme = useTheme();
+    const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
     return (
-        <Box style={containerStyle}>
+        <Box style={{ ...containerStyle, height: isDesktop ? '160px' : '230px' }} >
             <Details />
             <Box style={linksContainerStyle}>
-                {/* <NavLinkStyle title="Home" path="/" /> */}
-                {/* <NavLinkStyle title="Home" path="/" /> */}
                 <img src={logo} style={{ height: "80px" }} />
-                {/* <NavLinkStyle title="Home" path="/" /> */}
-                {/* <NavLinkStyle title="Home" path="/" /> */}
             </Box>
         </Box>
     );
 };
 
 const containerStyle = {
-    height: "160px",
     display: "flex",
     alignItems: "center",
     flexDirection: 'column',
