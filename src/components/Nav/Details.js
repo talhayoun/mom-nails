@@ -1,3 +1,4 @@
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Box, Typography } from "@mui/material";
 import styles from "./Details.module.css";
@@ -32,6 +33,10 @@ const Details = () => {
                     שעות עבודה:
                 </span>
                 א'-ה', 10:00 - 18:00
+            </Typography>
+            <Typography variant='subtitle2'>
+                <LocationOnIcon />
+                נס ציונה
             </Typography>
             <Typography style={{ cursor: 'pointer' }} onClick={onClickInstagram}>
                 <InstagramIcon />

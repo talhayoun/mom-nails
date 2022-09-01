@@ -11,7 +11,7 @@ const Nav = () => {
     const theme = useTheme();
     const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
     return (
-        <Box style={{ ...containerStyle, height: isDesktop ? '160px' : '230px' }} >
+        <Box style={{ ...containerStyle, height: isDesktop ? '160px' : '270px' }} >
             <Details />
             <Box style={linksContainerStyle}>
                 <img src={logo} style={{ height: "80px" }} />
